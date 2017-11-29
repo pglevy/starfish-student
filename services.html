@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="ui negative message">
+  <i class="close icon"></i>
+  <div class="header">
+    We're sorry we can't apply that discount
+  </div>
+  <p>That offer has expired
+</p></div>
+
+
+<div class="ui cards stackable">
+  {% for member in site.data.members %}
+  <div class="card">
+    <div class="content">
+      <div class="header">{{ member.name }}</div>
+      <div class="description">
+        {{ member.description }}
+      </div>
+    </div>
+    <div class="extra content">
+    <button class="ui button basic blue">SCHEDULE</button> <button class="ui button basic blue">CALL</button>
+  </div>
+  </div>
+  {% endfor %}
+</div>

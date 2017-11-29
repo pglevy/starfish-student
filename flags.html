@@ -1,0 +1,20 @@
+---
+layout: default
+title: Flags
+menu-button: arrow left icon
+menu-button-href: dashboard.html
+---
+
+
+
+<div class="ui list">
+  {% for member in site.data.flags %}
+  <div class="item mt-4">
+    <img class="ui avatar image mini" src="{{member.avatar}}">
+    <div class="content">
+      <a class="header text-xl">{{member.name}}</a>
+      <div class="description text-base mt-2">Raised by {{member.creator}} on {{member.created}}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

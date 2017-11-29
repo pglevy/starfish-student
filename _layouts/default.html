@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Your awesome title</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="../Semantic-UI-CSS-master/semantic.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+
+  <style>
+ body {
+  font-family: 'Open Sans', sans-serif;
+ }
+ </style> 
+  
+</head>
+
+
+  <body>
+    <div class="ui borderless blue inverted menu">
+      <a class="item" href="{{page.menu-button-href}}"><i class="{{page.menu-button}}"></i></a>
+      <a class="item">{{page.title}}</a>
+    </div>
+    <div class="ui container">
+
+{{content}}
+
+</div>
+  </body>
+
+</html>

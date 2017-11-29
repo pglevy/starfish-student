@@ -1,0 +1,24 @@
+---
+layout: default
+title: Kudos
+menu-button: arrow left icon
+menu-button-href: dashboard.html
+---
+
+
+
+<div class="ui list">
+  {% for member in site.data.kudos %}
+  <div class="item mt-4">
+    <img class="ui avatar image mini" src="{{member.avatar}}">
+    <div class="content">
+      <a class="header text-xl">{{member.name}}</a>
+      <div class="description text-base mt-2">
+      	<!-- <p class="overflow-hidden">Class: {{member.context}}</p> -->
+      	<p class="">Sent by {{member.creator}} on {{member.created}}</p>
+      	<p class=""><a class="text-base">Reply</a></p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

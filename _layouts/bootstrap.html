@@ -26,29 +26,41 @@
  body {
   font-family: 'Open Sans', sans-serif;
  }
- /*Semantic overrides*/
-
+ /*Bootstrap overrides*/
+.bg-primary {
+  background-color: #1E70A6 !important;
+}
+.text-primary {
+  color: #1E70A6 !important;
+}
+a {
+  color: #1E70A6;
+}
+.card a {
+  text-decoration: underline;
+}
  </style> 
   
 </head>
 
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
-      <a class="navbar-brand" href="#">{{page.title}}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-dark bg-primary mb-3 d-flex justify-content-start">
+      <button class="navbar-toggler mr-3 border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="material-icons text-white">menu</i>
       </button>
+      <a class="navbar-brand" href="#">{{page.title}}</a>
+      
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="dashboard-bs.html">Home</a>
+            <a class="nav-link text-white" href="dashboard-bs.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="flags-cards-bs.html">Flags</a>
+            <a class="nav-link text-white" href="flags-cards-bs.html">Flags</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="kudos-bs.html">Kudos</a>
+            <a class="nav-link text-white" href="kudos-bs.html">Kudos</a>
           </li>
         </ul>
       </div>

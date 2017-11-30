@@ -1,0 +1,39 @@
+---
+layout: bootstrap
+title: Flags
+menu-button: face
+menu-button-href: dashboard.html
+---
+
+<div class="card-group">
+{% for member in site.data.flags %}
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">{{member.name}}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">Raised by {{member.creator}} on {{member.created}}</h6>
+    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    <a href="#" class="card-link">ADD COMMENT</a>
+    <a href="#" class="card-link">GET HELP</a>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+
+<!-- <div class="ui cards stackable">
+  {% for member in site.data.flags %}
+  <div class="card">
+    <div class="content">
+      <div class="description">
+        <a class="header text-2xl">{{member.name}}</a>
+      	<img class="ui avatar image huge left floated" src="{{member.avatar}}"> <div class="description text-base mt-2">Raised by {{member.creator}} on {{member.created}}</div>
+      </div>
+    </div>
+    <div class="extra content">
+    <button class="ui button basic blue">ADD COMMENT</button> <button class="ui button basic blue">GET HELP</button>
+  </div>
+  </div>
+  {% endfor %}
+</div> -->
+
+

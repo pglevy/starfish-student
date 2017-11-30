@@ -5,18 +5,25 @@ menu-button: face
 menu-button-href: dashboard.html
 ---
 
-<div class="card-group">
-{% for member in site.data.flags %}
-<div class="card">
-  <div class="card-body">
-    <h4 class="card-title">{{member.name}}</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Raised by {{member.creator}} on {{member.created}}</h6>
-    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-    <a href="#" class="card-link">ADD COMMENT</a>
-    <a href="#" class="card-link">GET HELP</a>
-  </div>
-</div>
-{% endfor %}
+<div class="card-deck">
+  {% for member in site.data.flags %}
+  <div class="card">
+    <div class="card-body">
+      <div class="media">
+        <img class="mr-3 rounded" width="40" src="{{member.avatar}}" alt="Generic placeholder image">
+        <div class="media-body">  
+          <h4 class="card-title">{{member.name}}</h4>
+          <p class="card-text">{{member.raise_comment}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">Raised by {{member.creator}} on {{member.created}}</h6>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer bg-white">
+     <a href="#" class="card-link">ADD COMMENT</a>
+     <a href="#" class="card-link">GET HELP</a>
+   </div>
+ </div>
+ {% endfor %}
 </div>
 
 

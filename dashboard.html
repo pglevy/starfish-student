@@ -9,13 +9,13 @@ menu-button: sidebar icon
 
 <div class="row">
 {% for member in site.data.dashboard %}
-<div class="col-6  col-md-3 p-0">
-  <div class="card">
+<div class="col-6  col-md-3 col-lg p-0">
+  <div class="card card-dashboard">
     <div class="card-body text-center">
       <h1 class="card-title" style="font-size: .875rem;">{{member.category}}</h1>
       <p><i class="material-icons text-muted" style="font-size: 5rem;">{{member.icon}}</i></p>
       <p class="card-text font-weight-semibold">{{member.message}}</p>
-      <p><a href="appointment.html" class="text-uppercase">{{member.action}}</a></p>
+      <p><a href="upcoming.html" class="text-uppercase">{{member.action}}</a></p>
     </div>
   </div>
 </div> <!-- col -->

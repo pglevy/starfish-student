@@ -1,0 +1,70 @@
+---
+layout: bootstrap
+title: Upcoming
+menu-button: n/a
+menu-button-href: dashboard.html
+background-color: efefef
+---
+
+<p class="text-muted mt-3">THIS WEEK</P>
+
+<div class="card-deck">
+  {% for member in site.data.appointments %}
+  <div class="card">
+    <div class="card-header bg-white">
+      <h2 class="card-title">{{member.day}}, {{member.date}}</h2>
+    </div>
+      <div class="card-body">
+      <div class="media">
+        <img class="mr-3 round" width="40" src="https://randomuser.me/api/portraits/women/2.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0 mb-0">{{member.person}}</h5>
+          <span class="text-muted">Academic Advisor</span>
+        </div>
+      </div>
+      <p class="mt-2"><i class="material-icons">location_on</i> Annandale Campus</p>
+
+      <div id="exampleAccordion" data-children=".item">
+        <div class="item">
+          <i class="material-icons">keyboard_arrow_right</i> <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1">
+            More Details
+          </a>
+          <div id="exampleAccordion1" class="collapse hide mt-3" role="tabpanel">
+            
+              <p>Reason: Lorem ipsum dolor sit amet<br>
+              Context: Proin a vestibulum sem</p>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+    <div class="card-footer bg-white">
+     <a href="#" class="card-link text-uppercase">Change</a>
+     <a href="#" class="card-link text-uppercase">Cancel</a>
+   </div>
+ </div>
+ {% endfor %}
+</div>
+
+
+<!-- <div class="ui cards stackable">
+  {% for member in site.data.flags %}
+  <div class="card">
+    <div class="content">
+      <div class="description">
+        <a class="header text-2xl">{{member.name}}</a>
+      	<img class="ui avatar image huge left floated" src="{{member.avatar}}"> <div class="description text-base mt-2">Raised by {{member.creator}} on {{member.created}}</div>
+      </div>
+    </div>
+    <div class="extra content">
+    <button class="ui button basic blue">ADD COMMENT</button> <button class="ui button basic blue">GET HELP</button>
+  </div>
+  </div>
+  {% endfor %}
+</div> -->
+
+

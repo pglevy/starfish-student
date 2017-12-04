@@ -8,31 +8,16 @@ menu-button: sidebar icon
 
 
 <div class="row">
-
-
-  <div class="card col-6">
+{% for member in site.data.dashboard %}
+<div class="col-6  col-md-3 p-0">
+  <div class="card">
     <div class="card-body text-center">
-      <h1 class="card-title" style="font-size: .875rem;">Appointments</h1>
-      <p><i class="material-icons text-muted" style="font-size: 5rem;">today</i></p>
-      <p class="card-text font-weight-semibold">12/7, 9AM</p>
-      <p><a href="appointment.html">VIEW OR CHANGE</a></p>
+      <h1 class="card-title" style="font-size: .875rem;">{{member.category}}</h1>
+      <p><i class="material-icons text-muted" style="font-size: 5rem;">{{member.icon}}</i></p>
+      <p class="card-text font-weight-semibold">{{member.message}}</p>
+      <p><a href="appointment.html" class="text-uppercase">{{member.action}}</a></p>
     </div>
   </div>
-
-
-
-
-  <div class="card col-6">
-    <div class="card-body text-center">
-      <h1 class="card-title" style="font-size: .875rem;">Flags</h1>
-      <p><i class="material-icons text-muted" style="font-size: 5rem;">flag</i></p>
-      <p class="card-text font-weight-semibold">2 open flags</p>
-      <p><a href="appointment.html">TAKE ACTION</a></p>
-    </div>
-  </div>
-
- 
-
+</div> <!-- col -->
+{% endfor %}
 </div> <!-- row -->
-  
-

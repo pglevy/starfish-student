@@ -1,0 +1,38 @@
+---
+layout: appointment-detail
+title: Appointment
+number: 0
+---
+
+{% assign appointment = site.data.appointments[page.number] %}
+
+<div class="media mt-3">
+  <img class="mr-3 round" width="40" src="http://placehold.it/40x40" alt="Generic placeholder image">
+  <div class="media-body">
+    <h5 class="mt-0 mb-0">{{appointment.service}}</h5>
+  </div>
+</div>
+
+<hr>
+
+<h5 class="mt-3 mb-0 text-muted">Date &amp; Time</h5>
+<p>{{appointment.day}}, {{appointment.date}}, {{appointment.time-slot}} <a href="#">Change</a><br>
+<a href="#">Change duration</a></p>
+
+
+<div class="media mt-3">
+  <img class="mr-3 round" width="40" src="https://randomuser.me/api/portraits/women/2.jpg" alt="Generic placeholder image">
+  <div class="media-body">
+    <p class="mt-0 mb-0">{{appointment.person}}</p>
+    <span class="text-muted">Academic Advisor</span>
+  </div>
+</div>
+
+
+
+
+<h5 class="mt-5 mb-0 text-muted">Location</h5>
+<p>{{appointment.location}} <a href="#">Change</a></p>
+
+<h5 class="mt-5 mb-0 text-muted">Reason</h5>
+<p>{{appointment.reason}} <a href="#">Change</a></p>

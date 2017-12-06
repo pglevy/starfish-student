@@ -1,24 +1,26 @@
 ---
 layout: default
 title: Kudos
-menu-button: arrow left icon
-menu-button-href: dashboard.html
+background-color: efefef
 ---
 
-
-
-<div class="ui list">
+<div class="card-deck mt-3">
   {% for member in site.data.kudos %}
-  <div class="item mt-4">
-    <img class="ui avatar image mini" src="{{member.avatar}}">
-    <div class="content">
-      <a class="header text-xl">{{member.name}}</a>
-      <div class="description text-base mt-2">
-      	<!-- <p class="overflow-hidden">Class: {{member.context}}</p> -->
-      	<p class="">Sent by {{member.creator}} on {{member.created}}</p>
-      	<p class=""><a class="text-base">Reply</a></p>
+  <div class="card">
+    <div class="card-body">
+      <div class="media">
+        <img class="mr-3 round" width="40" src="{{member.avatar}}" alt="Generic placeholder image">
+        <div class="media-body">  
+          <h4 class="card-title">{{member.name}}</h4>
+          <p class="card-text">{{member.context}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">Given by {{member.creator}} on {{member.created}}</h6>
+        </div>
       </div>
     </div>
-  </div>
-  {% endfor %}
+    <div class="card-footer bg-white">
+     <a href="#" class="card-link">REPLY</a>
+     <a href="#" class="card-link">SHARE</a>
+   </div>
+ </div>
+ {% endfor %}
 </div>

@@ -15,15 +15,15 @@ background-color: efefef
         <p class="mb-0"><a href="appointment-1.html"><i class="material-icons align-bottom">today</i> Appointment</a></p>
       </div>
       <div class="card-body">
-        <p>{{member.day}}, {{member.date}}<br>
-          {{member.time-slot}}</p>
-        <div class="media">
+        <div class="media mb-3">
           <img class="mr-3 round" width="40" src="https://randomuser.me/api/portraits/women/2.jpg" alt="Generic placeholder image">
           <div class="media-body">
             <p class="mt-0 mb-0">{{member.person}}</p>
-            <span class="text-muted">Academic Advisor</span>
+            <span class="text-muted">{{member.service}}</span>
           </div>
         </div>
+        <p>{{member.day}}, {{member.date}}<br>
+          {{member.time-slot}}</p>
         <p class="mt-2"><i class="material-icons">location_on</i> <a href="{{member.location-link}}">Annandale Campus</a></p>
 
 
@@ -38,7 +38,7 @@ background-color: efefef
       </div>
       <div class="card-body">
         <h4>Attend financial aid seminar</h4>
-        <p><strong>Due: Friday, December 9</strong></p>
+        <p>Due Date: Friday, December 9</p>
 
 
       </div>

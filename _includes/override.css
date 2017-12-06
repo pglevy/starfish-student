@@ -22,6 +22,9 @@ nav a {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none;
 }
+.card-header a {
+	text-decoration: none;
+}
 .font-weight-semibold {
 	font-weight: 600;
 }

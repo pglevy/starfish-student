@@ -1,0 +1,19 @@
+---
+layout: default
+title: Appointments
+background-color: efefef
+---
+
+
+<div class="card-deck mt-3">
+{% for member in site.data.appointment-data limit:100 offset:0 %}
+  <div class="card">
+  	<div class="card-body">
+  		<p class="card-text text-muted">{{member.date}}</p>
+  		<h4 class="card-title">{{member.start-time}}–{{member.end-time}}</h4>
+  		<p class="card-text">{{member.name}}</p>
+  		<p class="card-subtitle mb-2 text-muted">Academic Advisor</p>
+  	</div>
+  </div>
+{% endfor %}
+</div>

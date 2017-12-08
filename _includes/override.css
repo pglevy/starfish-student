@@ -16,8 +16,8 @@ a {
 	color: #1E70A6;
 	text-decoration: underline;
 }
-nav a {
-	text-decoration: none;
+nav a, a.nav-link {
+	text-decoration: none !important;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none;

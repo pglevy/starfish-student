@@ -1,0 +1,29 @@
+---
+layout: default
+title: Appointments
+background-color: efefef
+---
+
+
+
+  	<div class="card-deck mt-3">
+  	{% for member in site.data.time-slots %}
+  	  <div class="card">
+  	  	<div class="card-body">
+          <small class="float-right text-muted">{{forloop.index}}</small>
+  	  		<p class="card-text text-muted">{{member.date}}</p>
+          <h4 class="card-title">{{member.start-time}}–{{member.end-time}}</h4>
+          <div class="media">
+            <img class="mr-3 round" width="40" src="{{member.image}}" alt="avatar">
+            <div class="media-body">  
+              <p class="card-title">{{member.name}}</p>
+              <p class="card-subtitle mb-2 text-muted">Academic Advisor</p>
+            </div>
+          </div>
+  	  	</div>
+  	  </div>
+  	{% endfor %}
+  	</div>
+
+
+

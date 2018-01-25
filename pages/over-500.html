@@ -13,14 +13,14 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
     
-    $('#moreButton2 button').hide();
-    $('#moreButton3 button').hide();
-    $('#moreButton4 button').hide();
-    $('#moreButton5 button').hide();
-    $('#moreButton6 button').hide();
-    $('#moreButton7 button').hide();
-    $('#moreButton8 button').hide();
-    $('#moreButton9 button').hide();
+    $('#moreButton2').hide();
+    $('#moreButton3').hide();
+    $('#moreButton4').hide();
+    $('#moreButton5').hide();
+    $('#moreButton6').hide();
+    $('#moreButton7').hide();
+    $('#moreButton8').hide();
+    $('#moreButton9').hide();
 
 
 
@@ -28,69 +28,83 @@ $( document ).ready(function() {
     $('#moreButton1 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton1').hide();
-      $('#moreButton2 button').show();
+      $('#moreButton2').show();
     });
 
     //hide the show more button after showing more
     $('#moreButton2 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton2').hide();
-      $('#moreButton3 button').show();
+      $('#moreButton3').show();
     });
 
     //hide the show more button after showing more
     $('#moreButton2 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton2').hide();
-      $('#moreButton3 button').show();
+      $('#moreButton3').show();
     });
 
     //hide the show more button after showing more
     $('#moreButton3 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton3').hide();
-      $('#moreButton4 button').show();
+      $('#moreButton4').show();
     });
 
     //hide the show more button after showing more
     $('#moreButton4 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton4').hide();
-      $('#moreButton5 button').show();
+      $('#moreButton5').show();
     });
 
     //hide the show more button after showing more
     $('#moreButton5 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton5').hide();
-      $('#moreButton6 button').show();
+      $('#moreButton6').show();
     });
 
     //hide the show more button after showing more
     $('#moreButton6 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton6').hide();
-      $('#moreButton7 button').show();
+      $('#moreButton7').show();
     });
 
     //hide the show more button after showing more
     $('#moreButton7 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton7').hide();
-      $('#moreButton8 button').show();
+      $('#moreButton8').show();
     });
 
     //hide the show more button after showing more
     $('#moreButton8 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton8').hide();
-      $('#moreButton9 button').show();
+      $('#moreButton9').show();
     });
 
     //hide the show more button after showing more
     $('#moreButton9 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton9').hide();
+    });
+
+    $('.showall').on('click', function(){
+      $('#collapseExample1').collapse({ show: true  });
+      $('#collapseExample2').collapse({ show: true  });
+      $('#collapseExample3').collapse({ show: true  });
+      $('#collapseExample4').collapse({ show: true  });
+      $('#collapseExample5').collapse({ show: true  });
+      $('#collapseExample6').collapse({ show: true  });
+      $('#collapseExample7').collapse({ show: true  });
+      $('#collapseExample8').collapse({ show: true  });
+      $('#collapseExample9').collapse({ show: true  });
+      $('#end').focus();
+      console.log("show all");
     });
 
 
@@ -103,6 +117,12 @@ $( document ).ready(function() {
 </script>
 
 <div class="container">
+
+
+  <div class="input-group mt-3">
+  <input type="text" class="form-control" placeholder="start" id="start" value="9/4/2018">
+  <input type="text" class="form-control" placeholder="end" value="9/15/2018">
+</div>
 
           <div class="card-deck mt-3">
     
@@ -860,8 +880,9 @@ $( document ).ready(function() {
 <p id="moreButton1">
         <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
           SHOW MORE
-        </button>
+        </button> <a href="#">BACK TO TOP</a>
       </p>
+      <p>(Prototype note: <a href="#end" class="showall">show all</a> and <a href="#end" class="showall">skip to end</a>)
       <div class="collapse" id="collapseExample1">
 
 
@@ -1620,7 +1641,7 @@ $( document ).ready(function() {
       <p id="moreButton2">
         <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
           SHOW MORE
-        </button>
+        </button> <a href="#">BACK TO TOP</a>
       </p>
       <div class="collapse" id="collapseExample2">
     
@@ -2364,7 +2385,7 @@ $( document ).ready(function() {
       <p id="moreButton3">
         <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
           SHOW MORE
-        </button>
+        </button> <a href="#">BACK TO TOP</a>
       </p>
       <div class="collapse" id="collapseExample3">
 
@@ -3138,7 +3159,7 @@ $( document ).ready(function() {
       <p id="moreButton4">
         <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
           SHOW MORE
-        </button>
+        </button> <a href="#">BACK TO TOP</a>
       </p>
       <div class="collapse" id="collapseExample4">
     
@@ -3897,7 +3918,7 @@ $( document ).ready(function() {
       <p id="moreButton5">
         <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
           SHOW MORE
-        </button>
+        </button> <a href="#">BACK TO TOP</a>
       </p>
       <div class="collapse" id="collapseExample5">
     
@@ -4656,7 +4677,7 @@ $( document ).ready(function() {
       <p id="moreButton6">
         <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
           SHOW MORE
-        </button>
+        </button> <a href="#">BACK TO TOP</a>
       </p>
       <div class="collapse" id="collapseExample6">
     
@@ -5415,7 +5436,7 @@ $( document ).ready(function() {
       <p id="moreButton7">
         <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
           SHOW MORE
-        </button>
+        </button> <a href="#">BACK TO TOP</a>
       </p>
       <div class="collapse" id="collapseExample7">
     
@@ -6174,7 +6195,7 @@ $( document ).ready(function() {
       <p id="moreButton8">
         <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
           SHOW MORE
-        </button>
+        </button> <a href="#">BACK TO TOP</a>
       </p>
       <div class="collapse" id="collapseExample8">
     
@@ -6933,7 +6954,7 @@ $( document ).ready(function() {
       <p id="moreButton9">
         <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">
           SHOW MORE
-        </button>
+        </button> <a href="#">BACK TO TOP</a>
       </p>
       <div class="collapse" id="collapseExample9">
     
@@ -7687,10 +7708,13 @@ $( document ).ready(function() {
         </div>
       </div>
     
+<p id="end">That's all folks! To see more, try a shorter <a href="#start">date range</a>.
 
 </div> <!-- collapse -->
 
     </div> <!-- card deck -->
+
+
 
 
     </div> <!-- container -->

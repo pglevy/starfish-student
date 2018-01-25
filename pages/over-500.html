@@ -87,6 +87,12 @@ $( document ).ready(function() {
       $('#moreButton9 button').show();
     });
 
+    //hide the show more button after showing more
+    $('#moreButton9 button').on('click', function() {
+      console.log("show more button clicked");
+      $('#moreButton9').hide();
+    });
+
 
 
     

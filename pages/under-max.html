@@ -39,13 +39,6 @@ $( document ).ready(function() {
     });
 
     //hide the show more button after showing more
-    $('#moreButton2 button').on('click', function() {
-      console.log("show more button clicked");
-      $('#moreButton2').hide();
-      $('#moreButton3').show();
-    });
-
-    //hide the show more button after showing more
     $('#moreButton3 button').on('click', function() {
       console.log("show more button clicked");
       $('#moreButton3').hide();
@@ -882,7 +875,7 @@ $( document ).ready(function() {
           SHOW MORE
         </button> <a href="#">BACK TO TOP</a>
       </p>
-      <p>(Prototype note: <a href="#end" class="showall">show all</a> and <a href="#end" class="showall">skip to end</a>)
+     
       <div class="collapse" id="collapseExample1">
 
 
@@ -2383,9 +2376,9 @@ $( document ).ready(function() {
 </div> <!-- collapse -->
 
       <p id="moreButton3">
-        <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+        <!-- <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
           SHOW MORE
-        </button> <a href="#">BACK TO TOP</a>
+        </button> --> <a href="#">BACK TO TOP</a>
       </p>
       <div class="collapse" id="collapseExample3">
 
@@ -7707,7 +7700,9 @@ $( document ).ready(function() {
           </div>
         </div>
       </div>
-    
+    <div class="text-center">
+    <img src="../assets/starfish-with-eyes@2x.png" class="img-fluid" width="50%">
+    <div>
 <p id="end">You've made it this far and you still want more? Sorry… you'll have to select a smaller <a href="#start">date range</a> to see other options so we don't break things.</p>
 
 </div> <!-- collapse -->

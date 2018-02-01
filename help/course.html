@@ -1,0 +1,28 @@
+---
+layout: default
+title: Get Help
+background-color: ffffff
+---
+
+<h1 class="mt-3 mb-4">Is it related to one of your courses?</h1>
+<form method="put" action="note.html">
+  <fieldset>
+    <div class="form-check mb-4">
+      <input class="form-check-input" type="radio" name="course" id="no" value="no" checked>
+      <label class="form-check-label" for="no">
+        No<br>
+        <small>Just. No.</small>
+      </label>
+    </div>
+  {% for member in site.data.student1-courses %}
+    <div class="form-check mb-4">
+      <input class="form-check-input" type="radio" name="course" id="{{member.id}}" value="{{member.name}}">
+      <label class="form-check-label" for="{{member.id}}">
+        {{member.name}}<br>
+        <small>{{member.course_id}}</small>
+      </label>
+    </div>
+ {% endfor %}
+ </fieldset>
+ <button type="submit" class="btn btn-primary btn-lg" id="type-course">CONTINUE</button>
+</form>

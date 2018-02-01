@@ -1,0 +1,20 @@
+---
+layout: default
+title: Get Help
+background-color: ffffff
+---
+
+<h1 class="mt-3 mb-4">What area do you need help in?</h1>
+<form method="put" action="course.html">
+  <fieldset>
+  {% for member in site.data.help-types %}
+    <div class="form-check mb-4">
+      <input class="form-check-input" type="radio" name="type" id="{{member.id}}" value="{{member.type}}">
+      <label class="form-check-label" for="{{member.id}}">
+        {{member.type}}
+      </label>
+    </div>
+ {% endfor %}
+ </fieldset>
+ <button type="submit" class="btn btn-primary btn-lg" id="type-continue">CONTINUE</button>
+</form>

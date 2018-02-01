@@ -36,9 +36,10 @@ $( document ).ready(function() {
 	$('p#note').html(localStorage.getItem('note'));
 
 
-	$('#send').on('click', function(){
+	$('#send').on('click', function(event){
 	  event.preventDefault();
 	  $('#send').addClass('disabled');
+	  $('#send').html('Sending…');
 	  var type = localStorage.getItem('type');
 	  var course = localStorage.getItem('course');
 	  var note = localStorage.getItem('note');

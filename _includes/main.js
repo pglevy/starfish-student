@@ -45,8 +45,7 @@ $( document ).ready(function() {
 	  var note = localStorage.getItem('note');
 	  var url = "https://sheetsu.com/apis/v1.0su/af78447eb931/sheets/help";
 	  var params = { type:type, course:course, note:note };
-	  //$.ajax({ type:"POST", url:url, data:params, success:successFunc });
-	  successFunc('yay');
+	  $.ajax({ type:"POST", url:url, data:params, success:successFunc });
 	});
 
 });

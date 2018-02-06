@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
 	function successFunc(data) {
 	  	console.log(data);
-	  	goToURL('http://127.0.0.1:4000/starfish-student/help/confirmation.html');
+	  	goToURL('/starfish-student/help/confirmation.html');
 	}
 
 	function goToURL(url){
@@ -45,7 +45,8 @@ $( document ).ready(function() {
 	  var note = localStorage.getItem('note');
 	  var url = "https://sheetsu.com/apis/v1.0su/af78447eb931/sheets/help";
 	  var params = { type:type, course:course, note:note };
-	  $.ajax({ type:"POST", url:url, data:params, success:successFunc });
+	  //$.ajax({ type:"POST", url:url, data:params, success:successFunc });
+	  successFunc('yay');
 	});
 
 });

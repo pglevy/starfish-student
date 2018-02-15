@@ -1,7 +1,6 @@
 $( document ).ready(function() {
 	console.log('ready');
 
-
 	function successFunc(data) {
 	  	console.log(data);
 	  	goToURL('/starfish-student/help/confirmation.html');
